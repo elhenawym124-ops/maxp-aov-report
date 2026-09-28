@@ -6,7 +6,9 @@
 <title>MaxP — خريطة أدوات العروض وعلاقتها بالـ AOV</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin:0; padding:28px 26px; background:#f6f7fb; font-family:"Segoe UI","Tahoma",sans-serif; color:#111827; width:1380px; }
+  body { margin:0; padding:28px 26px; background:#f6f7fb; font-family:"Segoe UI","Tahoma",sans-serif; color:#111827; width:100%; max-width:1380px; }
+  .wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  table { min-width:820px; }
   h1 { margin:0 0 4px; font-size:26px; }
   .sub { color:#6b7280; font-size:13px; margin-bottom:18px; }
   .badge { display:inline-block; background:#ecfdf5; color:#047857; border:1px solid #a7f3d0; border-radius:999px; padding:2px 10px; font-size:11px; font-weight:700; }
@@ -29,7 +31,7 @@
 <h1>أدوات العروض في MaxP اللي بتشتغل على AOV (متوسط قيمة الطلب)</h1>
 <div class="sub">مراجعة حيّة على المتجر <b>red line</b> · 24 أداة في استوديو التحويل (21 نشطة) · <span class="badge">مثبت حي من الأدمن</span></div>
 
-<h2>1) محرّكات رفع متوسط الطلب داخل استوديو التحويل — فئة «العروض والباقات»</h2>
+<div class="wrap"><h2>1) محرّكات رفع متوسط الطلب داخل استوديو التحويل — فئة «العروض والباقات»</h2>
 <table>
 <tr><th class="no">#</th><th>الأداة</th><th>الفايدة على الـ AOV</th><th>بتشتغل إزاي</th><th>اللينك</th></tr>
 <tr class="core"><td class="no">1</td><td class="name">اشترِ معًا (باقات)<br><small>اشترِ معًا</small></td><td>أقوى أداة — بتبيع 3 منتجات في أوردر واحد بسعر باقة مخفّض</td><td>تظهر على صفحة المنتج: «كتير من العملاء بيشتروا التلاتة مع بعض» + الباقة كاملة بسعر أقل من مجموع القطع (مثال حي: 1,750 بدل 2,100) وزر «أضف الباقة»</td><td class="link">/settings/store/tools/boughtTogether</td></tr>
@@ -37,9 +39,9 @@
 <tr class="core"><td class="no">3</td><td class="name">اشترِ أكثر وفّر أكثر</td><td>ترفع السلة على مستوى المجموعة مش المنتج</td><td>«امزج أي منتجات من المجموعة ووصّل لأقل سعر — الخصم بيتطبق على السلة»: 2 قطع = 10% · 3 = 15% · 5 = 25%</td><td class="link">/settings/store/tools/buyMoreSaveMore</td></tr>
 <tr class="core"><td class="no">4</td><td class="name">اقتراحات تكميلية<br><small>اقتراحات تكميلية</small></td><td>تزوّد قطعة صغيرة على السلة بدل ما تسيبها كما هي</td><td>بلوك «يكمّل اختيارك» تحط فيه منتجات مكمّلة بأسعارها مع زر «+» لإضافتها للسلة فورًا</td><td class="link">/settings/store/tools/crossSell</td></tr>
 <tr class="core"><td class="no">5</td><td class="name">شريط الشحن المجاني</td><td>أقوى رافع للسلة: العميل بيزوّد لحد ما يوصل للشحن المجاني</td><td>شريط «فاضل ٢٩٠ ج.م بس وتشحن مجانًا» + سلة تجريبية بقيمة ٤٦٠ ج.م — بيتحرّك مع قيمة السلة</td><td class="link">/settings/store/tools/freeShippingBar</td></tr>
-</table>
+</table></div>
 
-<h2>2) محرّكات الخصم والكوبونات (خارج الاستوديو)</h2>
+<div class="wrap"><h2>2) محرّكات الخصم والكوبونات (خارج الاستوديو)</h2>
 <table>
 <tr><th class="no">#</th><th>الأداة</th><th>الفايدة على الـ AOV</th><th>بتشتغل إزاي</th><th>اللينك</th></tr>
 <tr><td class="no">6</td><td class="name">إدارة الكوبونات والخصومات</td><td>الحد الأدنى للطلب بيجبر العميل يزوّد السلة عشان الكود ينفع</td><td>كود بنسبة مئوية أو مبلغ ثابت أو شحن مجاني + حد أدنى للطلب + حد أقصى للخصم + حد استخدام + فترة صلاحية + فئة العملاء (جدد/VIP/عادي) + تصفية بالحالة والنوع</td><td class="link">/coupons</td></tr>
@@ -49,9 +51,9 @@
 <tr><td class="no">10</td><td class="name">عروض المنتجات</td><td>عرض مخصّص لكل منتج بيزوّد الوحدات المبيعة منه</td><td>صفحة عروض المنتجات من قائمة العملاء — عرض مرتبط بمنتج وفئة عملاء</td><td class="link">/customers/product-offers</td></tr>
 <tr><td class="no">11</td><td class="name">الخصم التلقائي</td><td>خصم بيمشي لوحده من غير كود</td><td>قسم «الخصم التلقائي» جوه إعدادات العملاء (بيوجّه على نفس الصفحة عند فتح اللينك)</td><td class="link">/customers/settings</td></tr>
 <tr><td class="no">12</td><td class="name">عروض الكمية (على مستوى المنتج)</td><td>نفس محرّك الشرائح لكن مضبوط لكل منتج لوحده</td><td>تبويب «عروض الكمية» جوه تعديل المنتج — تعدّل شرائح الكمية للمنتج ده تحديدًا وتظهر للعميل في المتجر</td><td class="link">/products → تعديل منتج → عروض الكمية</td></tr>
-</table>
+</table></div>
 
-<h2>3) الولاء والتكرار (AOV على المدى الطويل)</h2>
+<div class="wrap"><h2>3) الولاء والتكرار (AOV على المدى الطويل)</h2>
 <table>
 <tr><th class="no">#</th><th>الأداة</th><th>الفايدة</th><th>بتشتغل إزاي</th><th>اللينك</th></tr>
 <tr><td class="no">13</td><td class="name">أعضاء ونقاط الولاء</td><td>النقاط بترجّع العميل وبتخليه يزوّد عشان يوصّل لمكافأة</td><td>مركز نقاط العملاء: ملف العميل + إجراء عملية على النقاط (إضافة/خصم) + أعضاء النقاط</td><td class="link">/customers/points-center</td></tr>
@@ -59,9 +61,9 @@
 <tr><td class="no">15</td><td class="name">الشرائح وقوائم العملاء</td><td>توجيه العرض لشريحة محددة يرفع الاستجابة</td><td>مركز تقسيم العملاء — بناء شرائح وقوائم تُستخدم في العروض والحملات</td><td class="link">/customers/segments</td></tr>
 <tr><td class="no">16</td><td class="name">إشعارات وحملات العملاء</td><td>إعادة تنشيط العملاء اللي اشتروا قبل كده</td><td>جدول إشعارات مجدول للعملاء (واتساب وغيره)</td><td class="link">/customers/customer-notifications</td></tr>
 <tr><td class="no">17</td><td class="name">رحلات العميل وإعادة الطلب</td><td>زيادة معدّل تكرار الطلب</td><td>مسارات واتساب آلية لرحلة العميل وإعادة الطلب</td><td class="link">/whatsapp/customer-journey</td></tr>
-</table>
+</table></div>
 
-<h2>4) القياس والتشخيص + أدوات إلحاح مكمّلة</h2>
+<div class="wrap"><h2>4) القياس والتشخيص + أدوات إلحاح مكمّلة</h2>
 <table>
 <tr><th class="no">#</th><th>الأداة</th><th>الفايدة</th><th>بتشتغل إزاي / ملاحظة</th><th>اللينك</th></tr>
 <tr><td class="no">18</td><td class="name">مراجعة العروض</td><td>لوحة واحدة تشوف بيها كل العروض الشغالة الآن</td><td>تجمع: الكوبونات النشطة + عروض المتجر الشاملة (متوقف/شغال) + إعدادات الشحن — وهي الطريقة الأسرع لمراجعة حالة العروض قبل أي شغل AOV</td><td class="link">/offers-review</td></tr>
@@ -70,7 +72,7 @@
 <tr><td class="no">21</td><td class="name">حاسبة أثر الخصم</td><td>تحسب الخصم بيتكلف كام قبل ما تفعّله</td><td>مدخلات المنتج ← قبل وبعد ← مقارنة توزيع التكاليف</td><td class="link">/tools/discount-impact</td></tr>
 <tr><td class="no">22</td><td class="name">مخطِّط البيع الإضافي والتكميلي</td><td>تخطيط Bump/Upsell بأرقام</td><td>الحسابات + توزيع الإيرادات + تحليلات ذكية</td><td class="link">/tools/upsell-planner</td></tr>
 <tr><td class="no">23</td><td class="name">أدوات إلحاح داخل الاستوديو (14 أداة)</td><td>بتساند الـ AOV بشكل غير مباشر</td><td>مؤقّت العروض · تنبيه قلة المخزون · عدّاد المباع · إشعارات ضغط الشراء · عدّاد الزوار الحيوي · إشعارات المبيعات الحية · نافذة الخروج · تنبيه عند مغادرة التاب · الشريط الثابت · موعد التوصيل · شارات الثقة · تنبيه توافر · المفضلة · المقارنة · الطلب المسبق · منتج خارجي · تقييم بالصور/الفيديو · شارة المشتري</td><td class="link">/settings/store/tools</td></tr>
-</table>
+</table></div>
 
 <div class="note">
 <b>تصحيح لازم يخص شغلك على الـ AOV:</b> عنصر «العرض بعد الطلب (Upsell)» في القائمة الجانبية (المتجر ← الإعدادات) <span class="warn">رابط ميّت</span> — بيفتح <b>إعدادات الملف الشخصي</b> بدل صفحة العرض بعد الطلب. الصفحة مبنية فعلًا في الكود (`pages/marketing/PostPurchaseOfferBuilderPage.tsx`) والراوت معرَّف في `routes/StorefrontRoutes.tsx`، لكن الملف ده <b>مش مستورد في `App.tsx` خالص</b>، فبيسقط على `/settings/:tab` ويروح للبروفايل. يعني أقوى أداة AOV بعد الشراء مقفولة على المالك حاليًا.<br>
